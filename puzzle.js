@@ -53,7 +53,7 @@ window.onload = function()
 			
 			// The image is manually set to the default through this line of code even though
 			// it should be imported
-			//squares[i].style.backgroundImage = "url('background.jpg')";
+			squares[i].style.backgroundImage = "url('kirby.jpg')";
 
 			// Used to arrange the pieces into a grid formation
 			squares[i].style.left = (i % 4 * 100) + "px";
@@ -333,7 +333,7 @@ window.onload = function()
 	// Used to randomly change the applied background picture
 	function changePic() 
 	{
-		var listOfPics = ["download.jpg","2 sonic.jpg","3 kirby.jpg","4 mario.jpg"];
+		var listOfPics = ["download.jpg","sonic.jpg","kirby.jpg","mario.jpg"];
 		var currentPic = squares[0].style.backgroundImage.slice(5, -2); // Sliced to remove 'url("")' from it
 		var rndNum = Math.floor(Math.random() * listOfPics.length);
 
@@ -343,7 +343,7 @@ window.onload = function()
 		// function from changing it to the same default mario pic when you first hit shuffle. 
 		if (currentPic.length === 0)
 		{
-			currentPic = "background.jpg";
+			currentPic = "kirby.jpg";
 		}
 		
 		// Used to prevent the random number from pointing
