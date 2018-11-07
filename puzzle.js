@@ -15,7 +15,7 @@
 		This feature will check the board status and prompt the user if they have won the game.
 
 	- Added animation for moving the puzzle pieces
-	 	This feature causes the pieces to move smoothly across the user's screen when they pick a piece to swap.
+		This feature causes the pieces to move smoothly across the user's screen when they pick a piece to swap.
 */
 
 "use strict"; // Added to make the code more JSLint compliant
@@ -161,17 +161,17 @@ window.onload = function()
 	function animatedSwitchPieces(puzzlePiece)
 	{
 		var posX = squares[puzzlePiece].style.left;
-	  	var posY = squares[puzzlePiece].style.top;	  	
-	  	var xFinished = (squares[puzzlePiece].style.left === emptySpaceX); // Evaluates to either true or false
-	  	var yFinished = (squares[puzzlePiece].style.top === emptySpaceY);
-	  	
-	  	var movement = setInterval(MovePiece, 1); // Executes the animation
+		var posY = squares[puzzlePiece].style.top;	  	
+		var xFinished = (squares[puzzlePiece].style.left === emptySpaceX); // Evaluates to either true or false
+		var yFinished = (squares[puzzlePiece].style.top === emptySpaceY);
+		
+		var movement = setInterval(MovePiece, 1); // Executes the animation
 
-	  	// Animation function to be used in setInterval. This functions works by incrementing or decrementing 
-	  	// the X and Y coordinates by 10 pixels until they have reached their new coordinates at the empty 
-	  	// space's X and Y coordinates. This function is used in the setInterval statement above which 
-	  	// executes this program every 1 millisecond until it reaches the clearInterval(movement) statement
-	  	// which signals the end of the loop and terminates the animation.
+		// Animation function to be used in setInterval. This functions works by incrementing or decrementing 
+		// the X and Y coordinates by 10 pixels until they have reached their new coordinates at the empty 
+		// space's X and Y coordinates. This function is used in the setInterval statement above which 
+		// executes this program every 1 millisecond until it reaches the clearInterval(movement) statement
+		// which signals the end of the loop and terminates the animation.
 		function MovePiece() 
 		{
 			if ((xFinished) && (yFinished))
@@ -339,7 +339,7 @@ window.onload = function()
 	// Used to randomly change the applied background picture
 	function changePic() 
 	{
-		var listOfPics = ["background.jpg","2 Zelda.jpg","3 Zelda.jpg","4 Mario.jpg"];
+		var listOfPics = ["download.jpg","2 sonic.jpg","3 kirby.jpg","4 mario.jpg"];
 		var currentPic = squares[0].style.backgroundImage.slice(5, -2); // Sliced to remove 'url("")' from it
 		var rndNum = Math.floor(Math.random() * listOfPics.length);
 
@@ -383,12 +383,12 @@ window.onload = function()
 
 		//Creates the checkbox
 		changePicChkBox = document.createElement("input");
-	    changePicChkBox.type = "checkbox";
-	    changePicChkBox.id = "changePicChkBox1";
-	    
-	    // Adds the label to the controls div in the html code before
-	    // appending the checkbox so that the text instructions appear 
-	    // before the checkbox control itself 		
+		changePicChkBox.type = "checkbox";
+		changePicChkBox.id = "changePicChkBox1";
+		
+		// Adds the label to the controls div in the html code before
+		// appending the checkbox so that the text instructions appear 
+		// before the checkbox control itself 		
 		document.getElementById("controls").appendChild(changePicChkBoxlabel);
 		document.getElementById("controls").appendChild(changePicChkBox);
 
@@ -399,12 +399,12 @@ window.onload = function()
 
 		//Creates the checkbox
 		easyModeChkBox = document.createElement("input");
-	    easyModeChkBox.type = "checkbox";
-	    easyModeChkBox.id = "easyModeChkBox1";
-	    
-	    // Adds the label to the controls div in the html code before
-	    // appending the checkbox so that the text instructions appear 
-	    // before the checkbox control itself 		
+		easyModeChkBox.type = "checkbox";
+		easyModeChkBox.id = "easyModeChkBox1";
+		
+		// Adds the label to the controls div in the html code before
+		// appending the checkbox so that the text instructions appear 
+		// before the checkbox control itself 		
 		document.getElementById("controls").appendChild(easyModeChkBoxlabel);
 		document.getElementById("controls").appendChild(easyModeChkBox);
 	}
