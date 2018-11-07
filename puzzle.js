@@ -1,18 +1,12 @@
 /* 								Extra Features Added to be marked
 	
-	- Added checkboxes to allow the user to enable or disable extra functionalities in the game
-		This feature currently allows the user to select if they want to enable easy mode or if
-		they want to change the picture of the puzzle when it is being shuffled.
-
 	- Added a feature to change the background image of the puzzle using a function called changePic()
 		If the user selects the change picture checkbox, then the picture of the puzzle is changed to 
 		currently any 1 of the 4 added background pictures before being shuffled.
 
-	- Added a easy mode feature 
-		This mode allows the user to swap any piece to the empty space which makes the game way easier.
-
-	- Added game logic to check if the user has won the game
-		This feature will check the board status and prompt the user if they have won the game.
+	- Added checkboxes to allow the user to enable or disable extra functionalities in the game
+		This feature currently allows the user to select if they want to enable easy mode or if
+		they want to change the picture of the puzzle when it is being shuffled.
 
 	- Added animation for moving the puzzle pieces
 		This feature causes the pieces to move smoothly across the user's screen when they pick a piece to swap.
